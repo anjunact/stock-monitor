@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"github.com/PuerkitoBio/goquery"
+	"github.com/anjunact/stock-monitor/models"
 )
 
 func Scrape() {
@@ -19,6 +20,7 @@ func Scrape() {
 		price := s.Find("._close").Text()
 		fmt.Printf("name:%s,price:%s",name, price)
 
+models.
 	})
 }
 func  Test()  {
