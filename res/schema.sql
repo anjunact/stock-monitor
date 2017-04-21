@@ -12,11 +12,11 @@ INSERT INTO books (isbn, title, author, price) VALUES
 
 ALTER TABLE books ADD PRIMARY KEY (isbn);
 
--- stock
 create table stocks (
   id serial primary key,
   name varchar(20),
   code varchar(20),
   price decimal (5, 2),
   updated date  default now()
+
 );
