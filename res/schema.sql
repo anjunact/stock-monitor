@@ -11,3 +11,12 @@ INSERT INTO books (isbn, title, author, price) VALUES
 ('978-1503379640', 'The Prince', 'Niccolò Machiavelli', 6.99);
 
 ALTER TABLE books ADD PRIMARY KEY (isbn);
+
+-- stock
+create table stocks (
+  id serial primary key,
+  name varchar(20),
+  code varchar(20),
+  price decimal (5, 2),
+  updated date  default now()
+);
